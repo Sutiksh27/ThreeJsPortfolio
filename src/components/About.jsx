@@ -33,7 +33,7 @@ const About = () => {
       </motion.div>
       <motion.p variants={fadeIn("", "", 0.1, 1)}
         className = "mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut officia consectetur ab. Expedita nesciunt saepe illo sint officia, et optio.
+          I am a highly motivated and results-oriented individual. I am always looking for new challenges and opportunities to learn and grow. I am a team player who is always willing to help others. I am a pleasure to work with and would be a valuable asset to any team.
 
       </motion.p>
 

@@ -167,35 +167,53 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "Sutiksh is highly skilled and experienced in web development. He has a deep understanding of web technologies and is always up-to-date on the latest trends.",
+      name: "Kshitij Verma",
+      designation: "SDE",
+      company: "Amazon",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+        "I've never met a web developer who truly cares about their clients' success like Sutiksh does.",
+      name: "Vedant Jain",
+      designation: "SDE",
+      company: "Amazon",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+        "Sutiksh is a pleasure to work with. He is always responsive to our feedback and is always willing to help us understand the technical aspects of our projects.!",
+      name: "Virender Singh",
+      designation: "SDE",
+      company: "Salesforce",
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "3D Portfolio",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A 3D portfolio website developed using React.Js, Three.Js, TailwindCSS.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "threejs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: carrent,
+      source_code_link: "https://www.github.com/Sutiksh27/ThreeJsPortfolio",
+    },
+    {
+      name: "Husky Works",
+      description:
+        "Web-based job portal for Northeastern University students to find internships and full time jobs.",
       tags: [
         {
           name: "react",
@@ -206,54 +224,33 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
           name: "scss",
           color: "pink-text-gradient",
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://www.github.com/Sutiksh27/HuskyWorks",
     },
     {
-      name: "Trip Guide",
+      name: "Vaccination Tracking System",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A java based software application to track vaccination status of children in different classes at a school.",
       tags: [
         {
-          name: "nextjs",
+          name: "java",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "mysql",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "swing",
           color: "pink-text-gradient",
         },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://www.github.com/Sutiksh27/DayCare",
     },
   ];
   
