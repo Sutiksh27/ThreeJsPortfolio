@@ -26,14 +26,15 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
+import portfolio from "./portfolio.png";
 import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import daycare from "./daycare.png";
 
 import zypher from "./company/zypher.png";
 import sustanix from "./company/sustanix.png";
 import crd from "./company/crd.png";
 import getstech from "./company/office.png";
+
 
 export {
   logo,
@@ -61,9 +62,9 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
+  portfolio,
   jobit,
-  tripguide,
+  daycare,
   zypher,
   sustanix,
   getstech,
