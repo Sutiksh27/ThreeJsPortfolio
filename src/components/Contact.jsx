@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import emailJs from "@emailjs/browser"
 
@@ -15,6 +15,8 @@ const Contact = () => {
     message: '',
   })
   const [loading, setLoading] = useState(false)
+  const [render, setRender] = useState(false)
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -45,6 +47,12 @@ const Contact = () => {
       alert("Something went wrong.")
     })
   }
+
+  useEffect(()=>{
+    setTimeout(function(){
+      setRender(true)
+    }.bind(this), 1000)
+  })
   
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
@@ -99,7 +107,7 @@ const Contact = () => {
 
       <motion.div variants = {slideIn('right', 'tween', 0.2, 1)}
       className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
-        <EarthCanvas/>
+        {render ? <EarthCanvas/>:<></>}
       </motion.div>
 
     </div>
