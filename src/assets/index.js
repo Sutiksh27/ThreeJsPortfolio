@@ -20,6 +20,8 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import aws from "./tech/aws.png"
+import blockchain from "./tech/blockchain.png"
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -58,6 +60,8 @@ export {
   tailwind,
   typescript,
   threejs,
+  aws,
+  blockchain,
   meta,
   shopify,
   starbucks,
