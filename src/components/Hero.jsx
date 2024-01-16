@@ -1,8 +1,15 @@
 import { motion } from 'framer-motion';
 import { styles } from "../styles";
 import { ComputersCanvas } from './canvas';
+import { useEffect, useState } from 'react';
 
 const Hero = () => {
+  const [render, setRender] = useState(false)
+  useEffect(()=>{
+    setTimeout(function(){
+      setRender(true)
+    }.bind(this), 1000)
+  })
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -18,13 +25,14 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Sutiksh</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am a versatile Software Engineer: <br className='sm:block hidden' />
-            Crafting Solutions Across Tech Landscapes
+            I'm A Versatile Software Engineer, <br className='sm:block hidden' />
+            Crafting Solutions Across Tech Landscapes.
           </p>
         </div>
       </div>
 
-      <ComputersCanvas />
+      { render ? <ComputersCanvas /> : <></>}
+      
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
