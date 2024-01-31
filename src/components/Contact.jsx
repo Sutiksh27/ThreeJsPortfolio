@@ -47,12 +47,6 @@ const Contact = () => {
       alert("Something went wrong.")
     })
   }
-
-  useEffect(()=>{
-    setTimeout(function(){
-      setRender(true)
-    }.bind(this), 1000)
-  })
   
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
@@ -107,7 +101,7 @@ const Contact = () => {
 
       <motion.div variants = {slideIn('right', 'tween', 0.2, 1)}
       className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
-        {render ? <EarthCanvas/>:<></>}
+        <EarthCanvas/>
       </motion.div>
 
     </div>

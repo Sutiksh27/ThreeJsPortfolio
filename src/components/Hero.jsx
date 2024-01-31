@@ -1,15 +1,8 @@
 import { motion } from 'framer-motion';
 import { styles } from "../styles";
 import { ComputersCanvas } from './canvas';
-import { useEffect, useState } from 'react';
 
 const Hero = () => {
-  const [render, setRender] = useState(false)
-  useEffect(()=>{
-    setTimeout(function(){
-      setRender(true)
-    }.bind(this), 1000)
-  })
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -31,9 +24,8 @@ const Hero = () => {
         </div>
       </div>
 
-      { render ? <ComputersCanvas /> : <></>}
+      <ComputersCanvas/>
       
-
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>

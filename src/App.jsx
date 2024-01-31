@@ -1,14 +1,8 @@
 import { BrowserRouter } from "react-router-dom";
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas} from "./components";
-import { useEffect, useState } from "react";
+
 
 const App = () => {
-  const [render, setRender] = useState(false)
-  useEffect(()=>{
-    setTimeout(function() {
-      setRender(true)
-    }.bind(this), 1000)
-  })
   return (
     <BrowserRouter>
       <div>
@@ -17,14 +11,14 @@ const App = () => {
           <Navbar/>
           <Hero/>
         </div>
-        <About/>
+         <About/>
         <Experience/>
         <Tech/>
         <Works/>
-        {/* <Feedbacks/> */}
+        <Feedbacks/>
         <div className="relative z-0">
           <Contact/>
-          {render?<StarsCanvas/>:<></>}
+          <StarsCanvas/>
         </div>
       </div>
     </BrowserRouter>

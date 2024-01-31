@@ -1,4 +1,4 @@
-import React, { Suspense} from 'react'
+import React, { Suspense, useEffect, useState} from 'react'
 import { Canvas } from '@react-three/fiber'
 import {
   Decal, Float, Icosahedron, OrbitControls, Preload, useTexture } from '@react-three/drei'
@@ -34,8 +34,7 @@ const BallCanvas = ({ icon }) => {
   return (
     <Canvas
       frameloop = "demand"
-      gl={{ preserveDrawingBuffer: true }}
-    >
+      gl={{ preserveDrawingBuffer: true }}>
       <Suspense fallback={<CanvasLoader/>}>
         <OrbitControls 
         enableZoom={false}/>
